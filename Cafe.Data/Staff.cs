@@ -22,5 +22,7 @@ namespace Cafe.Data
         {
             return Name  + " (" + NumberOfWorkers +")";
         }
+        public Staff() { }
+
     }
 }

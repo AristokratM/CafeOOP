@@ -53,13 +53,6 @@ namespace Cafe
 
         private void FormWorker_Load(object sender, EventArgs e)
         {
-            Staff staff1 = new Staff { Name = "Kitchen", Description = "Some info" };
-            Staff staff2 = new Staff { Name = "Accounting", Description = "Some another info" };
-            Staff.Staffs.Add(staff1);
-            Staff.Staffs.Add(staff2);
-            Worker.Workers.Add(new Worker { Name = "Oleh", SName = "Tonkoshkur", PName = "Ruslanovych", Birthday = new DateTime(2002, 5, 13), Gender = Gender.Male, Staff = staff1, Salary = 1500 }) ;
-            Worker.Workers.Add(new Worker { Name = "Ivan", SName = "Ivanov", PName = "Ivanovych", Birthday = new DateTime(2000, 5, 13), Gender = Gender.Male, Staff = staff2, Salary = 1000 });
-            
             LBWorkersRefresh();
             LBStaffsRefresh();
             cbWorkerGender.DataSource = Enum.GetValues(typeof(Gender));

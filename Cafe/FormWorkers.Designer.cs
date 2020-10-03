@@ -330,7 +330,7 @@
             this.Controls.Add(this.btnExit);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormWorkers";
-            this.Text = "FormWorkers";
+            this.Text = "Workers Management";
             this.Load += new System.EventHandler(this.FormWorker_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

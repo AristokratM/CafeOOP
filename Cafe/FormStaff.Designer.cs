@@ -76,7 +76,7 @@
             this.Controls.Add(this.rtbStaffInfo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormStaff";
-            this.Text = "FormStaff";
+            this.Text = "Staff Info";
             this.Load += new System.EventHandler(this.FormStaff_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

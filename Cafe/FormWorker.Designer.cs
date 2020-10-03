@@ -74,8 +74,9 @@
             this.Controls.Add(this.lblWorkerInfo);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.rtbWorkerInfo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormWorker";
-            this.Text = "FormWorker";
+            this.Text = "Worker Info";
             this.Load += new System.EventHandler(this.FormWorker_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
