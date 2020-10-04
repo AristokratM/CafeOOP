@@ -12,32 +12,37 @@ namespace Cafe
 {
     public partial class FormMenu : Form
     {
-        public List<Data.Menu> Menu = new List<Data.Menu>();
-        public FormMenu()
+        private Data.Menu _menu;
+        public FormMenu(Data.Menu menu)
         {
             InitializeComponent();
+            _menu = menu;
+        }
+
+        private void FormMenu_Load(object sender, EventArgs e)
+        {
+            string dishes = "";
+            int i = 0;
+            foreach (var dish in _menu.Dishes)
+            {
+                i += 1;
+                dishes += i + ")" + dish + " " + dish.Price + " ua, " + dish.Weight + " grams.\n";
+            }
+            if (dishes.Equals(""))
+            {
+                rtbMenuInfo.Text = _menu + " is empty.";
+            }
+            else
+            {
+                rtbMenuInfo.Text = "Menu: " + _menu + "\n" +
+                    "Dishes in menu: \n" +
+                    dishes;
+            }
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             Close();
-        }
-
-        private void btnAddMenu_Click(object sender, EventArgs e)
-        {
-            Menu.Add(new Data.Menu { Name = tbMenuName.Text });
-            LBMenuRefresh();
-        }
-
-        private void LBMenuRefresh()
-        {
-            lbMenu.DataSource = null;
-            lbMenu.DataSource = Menu;
-        }
-
-        private void FormMenu_Load(object sender, EventArgs e)
-        {
-            LBMenuRefresh();
         }
     }
 }

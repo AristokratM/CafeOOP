@@ -39,6 +39,7 @@
             this.lblWorkerInfo.AutoSize = true;
             this.lblWorkerInfo.BackColor = System.Drawing.Color.Transparent;
             this.lblWorkerInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblWorkerInfo.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblWorkerInfo.Location = new System.Drawing.Point(326, 56);
             this.lblWorkerInfo.Name = "lblWorkerInfo";
             this.lblWorkerInfo.Size = new System.Drawing.Size(159, 32);

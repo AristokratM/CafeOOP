@@ -22,5 +22,6 @@ namespace Cafe.Data
         {
             get { return DishInMenu.DishInMenus.Where(dm => dm.Menu == this).Select(dm => dm.Dish).ToList(); }
         }
+
     }
 }

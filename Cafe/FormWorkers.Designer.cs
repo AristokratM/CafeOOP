@@ -59,10 +59,10 @@
             // btnExit
             // 
             this.btnExit.BackColor = System.Drawing.Color.Moccasin;
-            this.btnExit.Location = new System.Drawing.Point(658, 350);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnExit.Location = new System.Drawing.Point(877, 431);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(86, 22);
+            this.btnExit.Size = new System.Drawing.Size(115, 27);
             this.btnExit.TabIndex = 2;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
@@ -74,10 +74,9 @@
             this.lblAllWorkers.BackColor = System.Drawing.Color.Transparent;
             this.lblAllWorkers.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblAllWorkers.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblAllWorkers.Location = new System.Drawing.Point(678, 23);
-            this.lblAllWorkers.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAllWorkers.Location = new System.Drawing.Point(904, 28);
             this.lblAllWorkers.Name = "lblAllWorkers";
-            this.lblAllWorkers.Size = new System.Drawing.Size(66, 18);
+            this.lblAllWorkers.Size = new System.Drawing.Size(80, 24);
             this.lblAllWorkers.TabIndex = 13;
             this.lblAllWorkers.Text = "Workers";
             // 
@@ -87,20 +86,19 @@
             this.lblWorkerName.BackColor = System.Drawing.Color.Transparent;
             this.lblWorkerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblWorkerName.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblWorkerName.Location = new System.Drawing.Point(370, 23);
-            this.lblWorkerName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblWorkerName.Location = new System.Drawing.Point(493, 28);
             this.lblWorkerName.Name = "lblWorkerName";
-            this.lblWorkerName.Size = new System.Drawing.Size(48, 18);
+            this.lblWorkerName.Size = new System.Drawing.Size(61, 24);
             this.lblWorkerName.TabIndex = 12;
             this.lblWorkerName.Text = "Name";
             // 
             // btnAddWorker
             // 
             this.btnAddWorker.BackColor = System.Drawing.Color.DarkSalmon;
-            this.btnAddWorker.Location = new System.Drawing.Point(461, 240);
-            this.btnAddWorker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddWorker.Location = new System.Drawing.Point(615, 295);
+            this.btnAddWorker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddWorker.Name = "btnAddWorker";
-            this.btnAddWorker.Size = new System.Drawing.Size(94, 29);
+            this.btnAddWorker.Size = new System.Drawing.Size(125, 36);
             this.btnAddWorker.TabIndex = 11;
             this.btnAddWorker.Text = "Add Worker";
             this.btnAddWorker.UseVisualStyleBackColor = false;
@@ -108,52 +106,53 @@
             // 
             // tbWorkerName
             // 
-            this.tbWorkerName.Location = new System.Drawing.Point(466, 17);
-            this.tbWorkerName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbWorkerName.Location = new System.Drawing.Point(621, 21);
+            this.tbWorkerName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbWorkerName.Name = "tbWorkerName";
-            this.tbWorkerName.Size = new System.Drawing.Size(76, 20);
+            this.tbWorkerName.Size = new System.Drawing.Size(100, 22);
             this.tbWorkerName.TabIndex = 10;
             // 
             // lbWorkers
             // 
             this.lbWorkers.FormattingEnabled = true;
-            this.lbWorkers.Location = new System.Drawing.Point(646, 47);
-            this.lbWorkers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lbWorkers.ItemHeight = 16;
+            this.lbWorkers.Location = new System.Drawing.Point(861, 58);
+            this.lbWorkers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lbWorkers.Name = "lbWorkers";
-            this.lbWorkers.Size = new System.Drawing.Size(127, 121);
+            this.lbWorkers.Size = new System.Drawing.Size(168, 148);
             this.lbWorkers.TabIndex = 9;
             // 
             // tbWorkerSName
             // 
-            this.tbWorkerSName.Location = new System.Drawing.Point(466, 47);
-            this.tbWorkerSName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbWorkerSName.Location = new System.Drawing.Point(621, 58);
+            this.tbWorkerSName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbWorkerSName.Name = "tbWorkerSName";
-            this.tbWorkerSName.Size = new System.Drawing.Size(76, 20);
+            this.tbWorkerSName.Size = new System.Drawing.Size(100, 22);
             this.tbWorkerSName.TabIndex = 14;
             // 
             // tbWorkerPName
             // 
-            this.tbWorkerPName.Location = new System.Drawing.Point(466, 77);
-            this.tbWorkerPName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbWorkerPName.Location = new System.Drawing.Point(621, 95);
+            this.tbWorkerPName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbWorkerPName.Name = "tbWorkerPName";
-            this.tbWorkerPName.Size = new System.Drawing.Size(76, 20);
+            this.tbWorkerPName.Size = new System.Drawing.Size(100, 22);
             this.tbWorkerPName.TabIndex = 15;
             // 
             // dtpWorkerBirthday
             // 
-            this.dtpWorkerBirthday.Location = new System.Drawing.Point(466, 108);
-            this.dtpWorkerBirthday.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpWorkerBirthday.Location = new System.Drawing.Point(621, 133);
+            this.dtpWorkerBirthday.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtpWorkerBirthday.Name = "dtpWorkerBirthday";
-            this.dtpWorkerBirthday.Size = new System.Drawing.Size(151, 20);
+            this.dtpWorkerBirthday.Size = new System.Drawing.Size(200, 22);
             this.dtpWorkerBirthday.TabIndex = 16;
             // 
             // cbWorkerGender
             // 
             this.cbWorkerGender.FormattingEnabled = true;
-            this.cbWorkerGender.Location = new System.Drawing.Point(466, 152);
-            this.cbWorkerGender.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbWorkerGender.Location = new System.Drawing.Point(621, 187);
+            this.cbWorkerGender.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbWorkerGender.Name = "cbWorkerGender";
-            this.cbWorkerGender.Size = new System.Drawing.Size(92, 21);
+            this.cbWorkerGender.Size = new System.Drawing.Size(121, 24);
             this.cbWorkerGender.TabIndex = 18;
             // 
             // lblWorkerSName
@@ -162,10 +161,9 @@
             this.lblWorkerSName.BackColor = System.Drawing.Color.Transparent;
             this.lblWorkerSName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblWorkerSName.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblWorkerSName.Location = new System.Drawing.Point(370, 49);
-            this.lblWorkerSName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblWorkerSName.Location = new System.Drawing.Point(493, 60);
             this.lblWorkerSName.Name = "lblWorkerSName";
-            this.lblWorkerSName.Size = new System.Drawing.Size(68, 18);
+            this.lblWorkerSName.Size = new System.Drawing.Size(87, 24);
             this.lblWorkerSName.TabIndex = 19;
             this.lblWorkerSName.Text = "Surname";
             // 
@@ -175,10 +173,9 @@
             this.lblWorkerPName.BackColor = System.Drawing.Color.Transparent;
             this.lblWorkerPName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblWorkerPName.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblWorkerPName.Location = new System.Drawing.Point(370, 79);
-            this.lblWorkerPName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblWorkerPName.Location = new System.Drawing.Point(493, 97);
             this.lblWorkerPName.Name = "lblWorkerPName";
-            this.lblWorkerPName.Size = new System.Drawing.Size(92, 18);
+            this.lblWorkerPName.Size = new System.Drawing.Size(117, 24);
             this.lblWorkerPName.TabIndex = 20;
             this.lblWorkerPName.Text = "Parent name";
             // 
@@ -188,10 +185,9 @@
             this.lblWorkerBirthday.BackColor = System.Drawing.Color.Transparent;
             this.lblWorkerBirthday.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblWorkerBirthday.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblWorkerBirthday.Location = new System.Drawing.Point(370, 110);
-            this.lblWorkerBirthday.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblWorkerBirthday.Location = new System.Drawing.Point(493, 135);
             this.lblWorkerBirthday.Name = "lblWorkerBirthday";
-            this.lblWorkerBirthday.Size = new System.Drawing.Size(61, 18);
+            this.lblWorkerBirthday.Size = new System.Drawing.Size(77, 24);
             this.lblWorkerBirthday.TabIndex = 21;
             this.lblWorkerBirthday.Text = "Birthday";
             // 
@@ -201,20 +197,20 @@
             this.lblWorkerGender.BackColor = System.Drawing.Color.Transparent;
             this.lblWorkerGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblWorkerGender.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblWorkerGender.Location = new System.Drawing.Point(370, 151);
-            this.lblWorkerGender.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblWorkerGender.Location = new System.Drawing.Point(493, 186);
             this.lblWorkerGender.Name = "lblWorkerGender";
-            this.lblWorkerGender.Size = new System.Drawing.Size(57, 18);
+            this.lblWorkerGender.Size = new System.Drawing.Size(74, 24);
             this.lblWorkerGender.TabIndex = 22;
             this.lblWorkerGender.Text = "Gender";
             // 
             // lbStaffs
             // 
             this.lbStaffs.FormattingEnabled = true;
-            this.lbStaffs.Location = new System.Drawing.Point(199, 47);
-            this.lbStaffs.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lbStaffs.ItemHeight = 16;
+            this.lbStaffs.Location = new System.Drawing.Point(265, 58);
+            this.lbStaffs.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lbStaffs.Name = "lbStaffs";
-            this.lbStaffs.Size = new System.Drawing.Size(127, 121);
+            this.lbStaffs.Size = new System.Drawing.Size(168, 148);
             this.lbStaffs.TabIndex = 23;
             this.lbStaffs.SelectedIndexChanged += new System.EventHandler(this.lbStaffs_SelectedIndexChanged);
             // 
@@ -224,10 +220,9 @@
             this.lblAllStaffs.BackColor = System.Drawing.Color.Transparent;
             this.lblAllStaffs.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblAllStaffs.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblAllStaffs.Location = new System.Drawing.Point(235, 25);
-            this.lblAllStaffs.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAllStaffs.Location = new System.Drawing.Point(313, 31);
             this.lblAllStaffs.Name = "lblAllStaffs";
-            this.lblAllStaffs.Size = new System.Drawing.Size(46, 18);
+            this.lblAllStaffs.Size = new System.Drawing.Size(53, 24);
             this.lblAllStaffs.TabIndex = 24;
             this.lblAllStaffs.Text = "Staffs";
             // 
@@ -237,28 +232,27 @@
             this.lblStaffName.BackColor = System.Drawing.Color.Transparent;
             this.lblStaffName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblStaffName.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblStaffName.Location = new System.Drawing.Point(9, 28);
-            this.lblStaffName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblStaffName.Location = new System.Drawing.Point(12, 34);
             this.lblStaffName.Name = "lblStaffName";
-            this.lblStaffName.Size = new System.Drawing.Size(48, 18);
+            this.lblStaffName.Size = new System.Drawing.Size(61, 24);
             this.lblStaffName.TabIndex = 26;
             this.lblStaffName.Text = "Name";
             // 
             // tbStaffName
             // 
-            this.tbStaffName.Location = new System.Drawing.Point(98, 26);
-            this.tbStaffName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbStaffName.Location = new System.Drawing.Point(131, 32);
+            this.tbStaffName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbStaffName.Name = "tbStaffName";
-            this.tbStaffName.Size = new System.Drawing.Size(76, 20);
+            this.tbStaffName.Size = new System.Drawing.Size(100, 22);
             this.tbStaffName.TabIndex = 25;
             // 
             // btnAddStaff
             // 
             this.btnAddStaff.BackColor = System.Drawing.Color.DarkSalmon;
-            this.btnAddStaff.Location = new System.Drawing.Point(7, 240);
-            this.btnAddStaff.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddStaff.Location = new System.Drawing.Point(9, 295);
+            this.btnAddStaff.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddStaff.Name = "btnAddStaff";
-            this.btnAddStaff.Size = new System.Drawing.Size(94, 29);
+            this.btnAddStaff.Size = new System.Drawing.Size(125, 36);
             this.btnAddStaff.TabIndex = 27;
             this.btnAddStaff.Text = "Add Staff";
             this.btnAddStaff.UseVisualStyleBackColor = false;
@@ -270,30 +264,29 @@
             this.lblStaffDescription.BackColor = System.Drawing.Color.Transparent;
             this.lblStaffDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblStaffDescription.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblStaffDescription.Location = new System.Drawing.Point(9, 51);
-            this.lblStaffDescription.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblStaffDescription.Location = new System.Drawing.Point(12, 63);
             this.lblStaffDescription.Name = "lblStaffDescription";
-            this.lblStaffDescription.Size = new System.Drawing.Size(83, 18);
+            this.lblStaffDescription.Size = new System.Drawing.Size(104, 24);
             this.lblStaffDescription.TabIndex = 29;
             this.lblStaffDescription.Text = "Description";
             // 
             // tbStaffDescription
             // 
-            this.tbStaffDescription.Location = new System.Drawing.Point(98, 51);
-            this.tbStaffDescription.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbStaffDescription.Location = new System.Drawing.Point(131, 63);
+            this.tbStaffDescription.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbStaffDescription.Name = "tbStaffDescription";
-            this.tbStaffDescription.Size = new System.Drawing.Size(76, 20);
+            this.tbStaffDescription.Size = new System.Drawing.Size(100, 22);
             this.tbStaffDescription.TabIndex = 28;
             // 
             // btnStaffInfo
             // 
             this.btnStaffInfo.BackColor = System.Drawing.Color.DarkSalmon;
-            this.btnStaffInfo.Location = new System.Drawing.Point(109, 240);
-            this.btnStaffInfo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnStaffInfo.Location = new System.Drawing.Point(145, 295);
+            this.btnStaffInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnStaffInfo.Name = "btnStaffInfo";
-            this.btnStaffInfo.Size = new System.Drawing.Size(94, 29);
+            this.btnStaffInfo.Size = new System.Drawing.Size(125, 36);
             this.btnStaffInfo.TabIndex = 30;
-            this.btnStaffInfo.Text = "Staff info";
+            this.btnStaffInfo.Text = "Staff Info";
             this.btnStaffInfo.UseVisualStyleBackColor = false;
             this.btnStaffInfo.Click += new System.EventHandler(this.btnStaffInfo_Click);
             // 
@@ -301,12 +294,12 @@
             // 
             this.btnWorkerInfo.BackColor = System.Drawing.Color.DarkSalmon;
             this.btnWorkerInfo.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnWorkerInfo.Location = new System.Drawing.Point(565, 240);
-            this.btnWorkerInfo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnWorkerInfo.Location = new System.Drawing.Point(753, 295);
+            this.btnWorkerInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnWorkerInfo.Name = "btnWorkerInfo";
-            this.btnWorkerInfo.Size = new System.Drawing.Size(94, 29);
+            this.btnWorkerInfo.Size = new System.Drawing.Size(125, 36);
             this.btnWorkerInfo.TabIndex = 31;
-            this.btnWorkerInfo.Text = "Worker info";
+            this.btnWorkerInfo.Text = "Worker Info";
             this.btnWorkerInfo.UseVisualStyleBackColor = false;
             this.btnWorkerInfo.Click += new System.EventHandler(this.btnWorkerInfo_Click);
             // 
@@ -316,28 +309,27 @@
             this.lblWorkerSalary.BackColor = System.Drawing.Color.Transparent;
             this.lblWorkerSalary.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblWorkerSalary.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblWorkerSalary.Location = new System.Drawing.Point(370, 203);
-            this.lblWorkerSalary.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblWorkerSalary.Location = new System.Drawing.Point(493, 250);
             this.lblWorkerSalary.Name = "lblWorkerSalary";
-            this.lblWorkerSalary.Size = new System.Drawing.Size(49, 18);
+            this.lblWorkerSalary.Size = new System.Drawing.Size(61, 24);
             this.lblWorkerSalary.TabIndex = 32;
             this.lblWorkerSalary.Text = "Salary";
             // 
             // tbWorkerSalary
             // 
-            this.tbWorkerSalary.Location = new System.Drawing.Point(466, 202);
-            this.tbWorkerSalary.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbWorkerSalary.Location = new System.Drawing.Point(621, 249);
+            this.tbWorkerSalary.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbWorkerSalary.Name = "tbWorkerSalary";
-            this.tbWorkerSalary.Size = new System.Drawing.Size(76, 20);
+            this.tbWorkerSalary.Size = new System.Drawing.Size(100, 22);
             this.tbWorkerSalary.TabIndex = 33;
             // 
             // FormWorkers
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(804, 422);
+            this.ClientSize = new System.Drawing.Size(1072, 519);
             this.Controls.Add(this.tbWorkerSalary);
             this.Controls.Add(this.lblWorkerSalary);
             this.Controls.Add(this.btnWorkerInfo);
@@ -364,7 +356,7 @@
             this.Controls.Add(this.lbWorkers);
             this.Controls.Add(this.btnExit);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormWorkers";
             this.Text = "Workers Management";
             this.Load += new System.EventHandler(this.FormWorker_Load);

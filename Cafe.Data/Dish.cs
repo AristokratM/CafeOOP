@@ -9,7 +9,6 @@ namespace Cafe.Data
     public class Dish:BaseClass
     {
         static public List<Dish> Dishes = new List<Dish>();
-        private Guid _menuId;
 
         public float Price { get; set; }
 

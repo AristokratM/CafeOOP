@@ -56,5 +56,10 @@ namespace Cafe
         {
             new FormDishInMenu((Data.Menu)lbMenus.SelectedItem).ShowDialog();
         }
+
+        private void btnMenuInfo_Click(object sender, EventArgs e)
+        {
+            new FormMenu((Data.Menu)lbMenus.SelectedItem).ShowDialog();
+        }
     }
 }

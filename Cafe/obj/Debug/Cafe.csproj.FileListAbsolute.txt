@@ -13,8 +13,8 @@ C:\Users\1\source\repos\Cafe\Cafe\bin\Debug\Cafe.Data.pdb
 C:\Users\1\source\repos\Cafe\Cafe\obj\Debug\Cafe.csproj.CopyComplete
 C:\Users\1\source\repos\Cafe\Cafe\obj\Debug\Cafe.FormAbout.resources
 C:\Users\1\source\repos\Cafe\Cafe\obj\Debug\Cafe.FormDishes.resources
-C:\Users\1\source\repos\Cafe\Cafe\obj\Debug\Cafe.FormMenu.resources
 C:\Users\1\source\repos\Cafe\Cafe\obj\Debug\Cafe.FormWorkers.resources
 C:\Users\1\source\repos\Cafe\Cafe\obj\Debug\Cafe.FormStaff.resources
 C:\Users\1\source\repos\Cafe\Cafe\obj\Debug\Cafe.FormWorker.resources
 C:\Users\1\source\repos\Cafe\Cafe\obj\Debug\Cafe.FormDishInMenu.resources
+C:\Users\1\source\repos\Cafe\Cafe\obj\Debug\Cafe.FormMenu.resources

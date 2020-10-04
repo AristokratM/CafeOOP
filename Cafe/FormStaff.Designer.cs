@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormStaff));
             this.rtbStaffInfo = new System.Windows.Forms.RichTextBox();
             this.btnExit = new System.Windows.Forms.Button();
-            this.lblFormInfo = new System.Windows.Forms.Label();
+            this.lblStaffInfo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // rtbStaffInfo
@@ -53,16 +53,17 @@
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // lblFormInfo
+            // lblStaffInfo
             // 
-            this.lblFormInfo.AutoSize = true;
-            this.lblFormInfo.BackColor = System.Drawing.Color.Transparent;
-            this.lblFormInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblFormInfo.Location = new System.Drawing.Point(313, 49);
-            this.lblFormInfo.Name = "lblFormInfo";
-            this.lblFormInfo.Size = new System.Drawing.Size(128, 32);
-            this.lblFormInfo.TabIndex = 3;
-            this.lblFormInfo.Text = "Staff Info";
+            this.lblStaffInfo.AutoSize = true;
+            this.lblStaffInfo.BackColor = System.Drawing.Color.Transparent;
+            this.lblStaffInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblStaffInfo.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblStaffInfo.Location = new System.Drawing.Point(313, 49);
+            this.lblStaffInfo.Name = "lblStaffInfo";
+            this.lblStaffInfo.Size = new System.Drawing.Size(128, 32);
+            this.lblStaffInfo.TabIndex = 3;
+            this.lblStaffInfo.Text = "Staff Info";
             // 
             // FormStaff
             // 
@@ -71,7 +72,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lblFormInfo);
+            this.Controls.Add(this.lblStaffInfo);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.rtbStaffInfo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -87,6 +88,6 @@
 
         private System.Windows.Forms.RichTextBox rtbStaffInfo;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Label lblFormInfo;
+        private System.Windows.Forms.Label lblStaffInfo;
     }
 }

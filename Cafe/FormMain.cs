@@ -38,11 +38,6 @@ namespace Cafe
             new FormDishes().ShowDialog();
         }
 
-        private void btnMenuForm_Click(object sender, EventArgs e)
-        {
-            new FormMenu().ShowDialog();
-        }
-
         private void FormMain_Load(object sender, EventArgs e)
         {
             Staff staff1 = new Staff { Name = "Kitchen", Description = "Some info" };
