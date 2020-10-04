@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="BaseClass.cs" />
     <Compile Include="Dish.cs" />
+    <Compile Include="DishInMenu.cs" />
     <Compile Include="Gender.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

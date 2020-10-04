@@ -17,3 +17,4 @@ C:\Users\1\source\repos\Cafe\Cafe\obj\Debug\Cafe.FormMenu.resources
 C:\Users\1\source\repos\Cafe\Cafe\obj\Debug\Cafe.FormWorkers.resources
 C:\Users\1\source\repos\Cafe\Cafe\obj\Debug\Cafe.FormStaff.resources
 C:\Users\1\source\repos\Cafe\Cafe\obj\Debug\Cafe.FormWorker.resources
+C:\Users\1\source\repos\Cafe\Cafe\obj\Debug\Cafe.FormDishInMenu.resources

@@ -42,7 +42,10 @@ namespace Cafe
         private void LBWorkersRefresh()
         {
             lbWorkers.DataSource = null;
-            lbWorkers.DataSource = Worker.Workers;
+            if (lbStaffs.SelectedItem != null)
+            {
+                lbWorkers.DataSource = ((Staff)lbStaffs.SelectedItem).Workers;
+            }
         }
 
         private void LBStaffsRefresh()
@@ -79,5 +82,9 @@ namespace Cafe
             new FormWorker((Worker)lbWorkers.SelectedItem).ShowDialog();
         }
 
+        private void lbStaffs_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LBWorkersRefresh();
+        }
     }
 }
