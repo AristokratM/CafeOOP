@@ -52,11 +52,23 @@
     <Compile Include="FormAbout.Designer.cs">
       <DependentUpon>FormAbout.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDish.Designer.cs">
+      <DependentUpon>FormDish.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDishes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormDishes.Designer.cs">
       <DependentUpon>FormDishes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenus.Designer.cs">
+      <DependentUpon>FormMenus.cs</DependentUpon>
     </Compile>
     <Compile Include="FormDishInMenu.cs">
       <SubType>Form</SubType>
@@ -99,8 +111,14 @@
     <EmbeddedResource Include="FormAbout.resx">
       <DependentUpon>FormAbout.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormDish.resx">
+      <DependentUpon>FormDish.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDishes.resx">
       <DependentUpon>FormDishes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenus.resx">
+      <DependentUpon>FormMenus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDishInMenu.resx">
       <DependentUpon>FormDishInMenu.cs</DependentUpon>

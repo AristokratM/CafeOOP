@@ -38,31 +38,32 @@ namespace Cafe
             lbOtherDishes.DataSource = Dish.GetDishesExceptMenu(_menu);
             
         }
-
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            List<Dish> dishes = new List<Dish>();
             foreach (var dish in lbOtherDishes.SelectedItems)
             {
-                DishInMenu.DishInMenus.Add(new DishInMenu {Menu =_menu, Dish = (Dish)dish });
+                dishes.Add((Dish)dish);
             }
+
+            _menu.Add_Dishes(dishes);
             LBRefresh();
         }
 
         private void btnRemove_Click(object sender, EventArgs e)
         {
+            List<Dish> dishes = new List<Dish>();
             foreach (var dish in lbDishes.SelectedItems)
             {
-                DishInMenu.DishInMenus.Remove(((Dish)dish).DishInMenus.Where(dm=>dm.Menu==_menu).FirstOrDefault());
+                dishes.Add((Dish)dish);
             }
+            _menu.Remove_Dishes(dishes);
             LBRefresh();
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            foreach (var dm in _menu.DishInMenus)
-            {
-                DishInMenu.DishInMenus.Remove(dm);
-            }
+            _menu.Delete_All_Dishes();
             LBRefresh();
         }
     }

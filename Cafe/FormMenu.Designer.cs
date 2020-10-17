@@ -32,6 +32,9 @@
             this.lblMenuInfo = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.rtbMenuInfo = new System.Windows.Forms.RichTextBox();
+            this.lblMenuName = new System.Windows.Forms.Label();
+            this.tbMenuName = new System.Windows.Forms.TextBox();
+            this.btnApplyChanges = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblMenuInfo
@@ -40,7 +43,7 @@
             this.lblMenuInfo.BackColor = System.Drawing.Color.Transparent;
             this.lblMenuInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblMenuInfo.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblMenuInfo.Location = new System.Drawing.Point(265, 43);
+            this.lblMenuInfo.Location = new System.Drawing.Point(585, 42);
             this.lblMenuInfo.Name = "lblMenuInfo";
             this.lblMenuInfo.Size = new System.Drawing.Size(140, 32);
             this.lblMenuInfo.TabIndex = 6;
@@ -49,7 +52,7 @@
             // btnExit
             // 
             this.btnExit.BackColor = System.Drawing.Color.Moccasin;
-            this.btnExit.Location = new System.Drawing.Point(597, 380);
+            this.btnExit.Location = new System.Drawing.Point(756, 379);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(115, 27);
             this.btnExit.TabIndex = 5;
@@ -59,11 +62,43 @@
             // 
             // rtbMenuInfo
             // 
-            this.rtbMenuInfo.Location = new System.Drawing.Point(88, 92);
+            this.rtbMenuInfo.Location = new System.Drawing.Point(390, 102);
             this.rtbMenuInfo.Name = "rtbMenuInfo";
             this.rtbMenuInfo.Size = new System.Drawing.Size(481, 236);
             this.rtbMenuInfo.TabIndex = 4;
             this.rtbMenuInfo.Text = "";
+            // 
+            // lblMenuName
+            // 
+            this.lblMenuName.AutoSize = true;
+            this.lblMenuName.BackColor = System.Drawing.Color.Transparent;
+            this.lblMenuName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblMenuName.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblMenuName.Location = new System.Drawing.Point(11, 61);
+            this.lblMenuName.Name = "lblMenuName";
+            this.lblMenuName.Size = new System.Drawing.Size(61, 24);
+            this.lblMenuName.TabIndex = 19;
+            this.lblMenuName.Text = "Name";
+            // 
+            // tbMenuName
+            // 
+            this.tbMenuName.Location = new System.Drawing.Point(78, 61);
+            this.tbMenuName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbMenuName.Name = "tbMenuName";
+            this.tbMenuName.Size = new System.Drawing.Size(124, 22);
+            this.tbMenuName.TabIndex = 18;
+            // 
+            // btnApplyChanges
+            // 
+            this.btnApplyChanges.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnApplyChanges.Location = new System.Drawing.Point(78, 102);
+            this.btnApplyChanges.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnApplyChanges.Name = "btnApplyChanges";
+            this.btnApplyChanges.Size = new System.Drawing.Size(124, 32);
+            this.btnApplyChanges.TabIndex = 20;
+            this.btnApplyChanges.Text = "Apply Changes";
+            this.btnApplyChanges.UseVisualStyleBackColor = false;
+            this.btnApplyChanges.Click += new System.EventHandler(this.btnApplyChanges_Click);
             // 
             // FormMenu
             // 
@@ -71,7 +106,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(924, 462);
+            this.Controls.Add(this.btnApplyChanges);
+            this.Controls.Add(this.lblMenuName);
+            this.Controls.Add(this.tbMenuName);
             this.Controls.Add(this.lblMenuInfo);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.rtbMenuInfo);
@@ -89,5 +127,8 @@
         private System.Windows.Forms.Label lblMenuInfo;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.RichTextBox rtbMenuInfo;
+        private System.Windows.Forms.Label lblMenuName;
+        private System.Windows.Forms.TextBox tbMenuName;
+        private System.Windows.Forms.Button btnApplyChanges;
     }
 }

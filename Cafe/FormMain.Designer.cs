@@ -32,6 +32,7 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.btnAboutForm = new System.Windows.Forms.Button();
             this.btnWorkersForm = new System.Windows.Forms.Button();
+            this.btnMenusForm = new System.Windows.Forms.Button();
             this.btnDishesForm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -63,22 +64,34 @@
             this.btnWorkersForm.BackColor = System.Drawing.Color.DarkSalmon;
             this.btnWorkersForm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnWorkersForm.BackgroundImage")));
             this.btnWorkersForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnWorkersForm.Location = new System.Drawing.Point(543, 74);
+            this.btnWorkersForm.Location = new System.Drawing.Point(485, 34);
             this.btnWorkersForm.Name = "btnWorkersForm";
-            this.btnWorkersForm.Size = new System.Drawing.Size(273, 255);
+            this.btnWorkersForm.Size = new System.Drawing.Size(200, 200);
             this.btnWorkersForm.TabIndex = 5;
             this.btnWorkersForm.UseVisualStyleBackColor = false;
             this.btnWorkersForm.Click += new System.EventHandler(this.btnWorkersForm_Click);
+            // 
+            // btnMenusForm
+            // 
+            this.btnMenusForm.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnMenusForm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMenusForm.BackgroundImage")));
+            this.btnMenusForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMenusForm.Location = new System.Drawing.Point(31, 34);
+            this.btnMenusForm.Name = "btnMenusForm";
+            this.btnMenusForm.Size = new System.Drawing.Size(200, 200);
+            this.btnMenusForm.TabIndex = 6;
+            this.btnMenusForm.UseVisualStyleBackColor = false;
+            this.btnMenusForm.Click += new System.EventHandler(this.btnMenusForm_Click);
             // 
             // btnDishesForm
             // 
             this.btnDishesForm.BackColor = System.Drawing.Color.DarkSalmon;
             this.btnDishesForm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDishesForm.BackgroundImage")));
             this.btnDishesForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDishesForm.Location = new System.Drawing.Point(39, 74);
+            this.btnDishesForm.Location = new System.Drawing.Point(256, 34);
             this.btnDishesForm.Name = "btnDishesForm";
-            this.btnDishesForm.Size = new System.Drawing.Size(273, 255);
-            this.btnDishesForm.TabIndex = 6;
+            this.btnDishesForm.Size = new System.Drawing.Size(200, 200);
+            this.btnDishesForm.TabIndex = 7;
             this.btnDishesForm.UseVisualStyleBackColor = false;
             this.btnDishesForm.Click += new System.EventHandler(this.btnDishesForm_Click);
             // 
@@ -90,6 +103,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(862, 481);
             this.Controls.Add(this.btnDishesForm);
+            this.Controls.Add(this.btnMenusForm);
             this.Controls.Add(this.btnWorkersForm);
             this.Controls.Add(this.btnAboutForm);
             this.Controls.Add(this.btnExit);
@@ -105,6 +119,7 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnAboutForm;
         private System.Windows.Forms.Button btnWorkersForm;
+        private System.Windows.Forms.Button btnMenusForm;
         private System.Windows.Forms.Button btnDishesForm;
     }
 }

@@ -54,6 +54,8 @@
             this.btnWorkerInfo = new System.Windows.Forms.Button();
             this.lblWorkerSalary = new System.Windows.Forms.Label();
             this.tbWorkerSalary = new System.Windows.Forms.TextBox();
+            this.lblWorkerStaff = new System.Windows.Forms.Label();
+            this.cbWorkerStaff = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btnExit
@@ -95,7 +97,7 @@
             // btnAddWorker
             // 
             this.btnAddWorker.BackColor = System.Drawing.Color.DarkSalmon;
-            this.btnAddWorker.Location = new System.Drawing.Point(615, 295);
+            this.btnAddWorker.Location = new System.Drawing.Point(618, 340);
             this.btnAddWorker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddWorker.Name = "btnAddWorker";
             this.btnAddWorker.Size = new System.Drawing.Size(125, 36);
@@ -294,7 +296,7 @@
             // 
             this.btnWorkerInfo.BackColor = System.Drawing.Color.DarkSalmon;
             this.btnWorkerInfo.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnWorkerInfo.Location = new System.Drawing.Point(753, 295);
+            this.btnWorkerInfo.Location = new System.Drawing.Point(756, 340);
             this.btnWorkerInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnWorkerInfo.Name = "btnWorkerInfo";
             this.btnWorkerInfo.Size = new System.Drawing.Size(125, 36);
@@ -309,7 +311,7 @@
             this.lblWorkerSalary.BackColor = System.Drawing.Color.Transparent;
             this.lblWorkerSalary.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblWorkerSalary.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblWorkerSalary.Location = new System.Drawing.Point(493, 250);
+            this.lblWorkerSalary.Location = new System.Drawing.Point(493, 286);
             this.lblWorkerSalary.Name = "lblWorkerSalary";
             this.lblWorkerSalary.Size = new System.Drawing.Size(61, 24);
             this.lblWorkerSalary.TabIndex = 32;
@@ -317,11 +319,32 @@
             // 
             // tbWorkerSalary
             // 
-            this.tbWorkerSalary.Location = new System.Drawing.Point(621, 249);
+            this.tbWorkerSalary.Location = new System.Drawing.Point(621, 288);
             this.tbWorkerSalary.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbWorkerSalary.Name = "tbWorkerSalary";
             this.tbWorkerSalary.Size = new System.Drawing.Size(100, 22);
             this.tbWorkerSalary.TabIndex = 33;
+            // 
+            // lblWorkerStaff
+            // 
+            this.lblWorkerStaff.AutoSize = true;
+            this.lblWorkerStaff.BackColor = System.Drawing.Color.Transparent;
+            this.lblWorkerStaff.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblWorkerStaff.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblWorkerStaff.Location = new System.Drawing.Point(493, 237);
+            this.lblWorkerStaff.Name = "lblWorkerStaff";
+            this.lblWorkerStaff.Size = new System.Drawing.Size(44, 24);
+            this.lblWorkerStaff.TabIndex = 34;
+            this.lblWorkerStaff.Text = "Staff";
+            // 
+            // cbWorkerStaff
+            // 
+            this.cbWorkerStaff.FormattingEnabled = true;
+            this.cbWorkerStaff.Location = new System.Drawing.Point(621, 240);
+            this.cbWorkerStaff.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbWorkerStaff.Name = "cbWorkerStaff";
+            this.cbWorkerStaff.Size = new System.Drawing.Size(121, 24);
+            this.cbWorkerStaff.TabIndex = 35;
             // 
             // FormWorkers
             // 
@@ -330,6 +353,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1072, 519);
+            this.Controls.Add(this.cbWorkerStaff);
+            this.Controls.Add(this.lblWorkerStaff);
             this.Controls.Add(this.tbWorkerSalary);
             this.Controls.Add(this.lblWorkerSalary);
             this.Controls.Add(this.btnWorkerInfo);
@@ -392,5 +417,7 @@
         private System.Windows.Forms.Button btnWorkerInfo;
         private System.Windows.Forms.Label lblWorkerSalary;
         private System.Windows.Forms.TextBox tbWorkerSalary;
+        private System.Windows.Forms.Label lblWorkerStaff;
+        private System.Windows.Forms.ComboBox cbWorkerStaff;
     }
 }

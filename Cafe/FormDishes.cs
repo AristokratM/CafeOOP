@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cafe.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Cafe.Data;
+
 namespace Cafe
 {
     public partial class FormDishes : Form
@@ -22,44 +23,38 @@ namespace Cafe
             Close();
         }
 
-        private void btnAddMenu_Click(object sender, EventArgs e)
+        private void FormDishes_Load(object sender, EventArgs e)
         {
-            Data.Menu.Menus.Add(new Data.Menu { Name = tbMenuName.Text }) ;
-            LBMenusRefresh();
+            LBDishesRefresh();
         }
-
-        private void LBMenusRefresh()
+        private void LBDishesRefresh()
         {
-            lbMenus.DataSource = null;
-            lbMenus.DataSource = Data.Menu.Menus;
+            lbDishes.DataSource = null;
+            lbDishes.DataSource = Dish.Items;
         }
 
         private void btnAddDish_Click(object sender, EventArgs e)
         {
-            Dish.Dishes.Add(new Dish {Name = tbDishName.Text, Price = float.Parse(tbDishPrice.Text), Weight = float.Parse(tbDishWeight.Text) });
-            LBMDishesRefresh();
+            new FormDish(null).ShowDialog();
+            LBDishesRefresh();
         }
 
-        private void LBMDishesRefresh()
+        private void btnEditDish_Click(object sender, EventArgs e)
         {
-            lbDishes.DataSource = null;
-            lbDishes.DataSource = Dish.Dishes;
+            new FormDish((Dish)lbDishes.SelectedItem).ShowDialog();
+            LBDishesRefresh();
         }
 
-        private void FormDishes_Load(object sender, EventArgs e)
+        private void btnDishInfo_Click(object sender, EventArgs e)
         {
-            LBMenusRefresh();
-            LBMDishesRefresh();
+            new FormDish((Dish)lbDishes.SelectedItem).ShowDialog();
+            LBDishesRefresh();
         }
 
-        private void btnMenuDishes_Click(object sender, EventArgs e)
+        private void btnRemoveDish_Click(object sender, EventArgs e)
         {
-            new FormDishInMenu((Data.Menu)lbMenus.SelectedItem).ShowDialog();
-        }
-
-        private void btnMenuInfo_Click(object sender, EventArgs e)
-        {
-            new FormMenu((Data.Menu)lbMenus.SelectedItem).ShowDialog();
+            Dish.Items.Remove((Dish)lbDishes.SelectedItem);
+            LBDishesRefresh();
         }
     }
 }

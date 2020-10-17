@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Cafe.Data
 {
-    public class DishInMenu:BaseClass
+    public class DishInMenu:BaseClass<DishInMenu>
     {
-        static public List<DishInMenu> DishInMenus = new List<DishInMenu>();
+       // static public List<DishInMenu> DishInMenus = new List<DishInMenu>();
 
         private Guid _dishId;
 
         public Dish Dish
 
         {
-            get { return Dish.Dishes.Where(d => d.Id == _dishId).FirstOrDefault(); }
+            get { return Dish.Items.Where(d => d.Id == _dishId).FirstOrDefault(); }
             set { _dishId = value.Id; }
         }
 
@@ -23,7 +23,7 @@ namespace Cafe.Data
 
         public Menu Menu
         {
-            get { return Menu.Menus.Where(m => m.Id == _menuId).FirstOrDefault(); }
+            get { return Menu.Items.Where(m => m.Id == _menuId).FirstOrDefault(); }
             set { _menuId = value.Id; }
         }
 

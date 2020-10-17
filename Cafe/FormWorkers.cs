@@ -25,7 +25,7 @@ namespace Cafe
 
         private void btnAddWorker_Click(object sender, EventArgs e)
         {
-            Worker.Workers.Add(new Worker
+            Worker.Items.Add(new Worker
             {
                 Name = tbWorkerName.Text,
                 SName = tbWorkerSName.Text,
@@ -51,7 +51,7 @@ namespace Cafe
         private void LBStaffsRefresh()
         {
             lbStaffs.DataSource = null;
-            lbStaffs.DataSource = Staff.Staffs;
+            lbStaffs.DataSource = Staff.Items;
         }
 
         private void FormWorker_Load(object sender, EventArgs e)
@@ -60,6 +60,7 @@ namespace Cafe
             LBStaffsRefresh();
             cbWorkerGender.DataSource = Enum.GetValues(typeof(Gender));
             cbWorkerGender.SelectedItem = Gender.NoData;
+            cbWorkerStaff.DataSource = Staff.Items;
         }
 
    
@@ -68,7 +69,7 @@ namespace Cafe
 
         private void btnAddStaff_Click(object sender, EventArgs e)
         {
-            Staff.Staffs.Add(new Staff { Name = tbStaffName.Text, Description = tbStaffDescription.Text }) ;
+            Staff.Items.Add(new Staff { Name = tbStaffName.Text, Description = tbStaffDescription.Text }) ;
             LBStaffsRefresh();
         }
 
@@ -86,5 +87,6 @@ namespace Cafe
         {
             LBWorkersRefresh();
         }
+
     }
 }

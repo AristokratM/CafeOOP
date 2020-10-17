@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Cafe.Data
 {
-    public class BaseClass
+    public class BaseClass<T> where T:BaseClass<T>
     {
+        static public List<T> Items = new List<T>();
         public Guid Id { get; private set; }
         public string Name { get; set; }
         public BaseClass()
