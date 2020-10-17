@@ -25,68 +25,40 @@ namespace Cafe
 
         private void btnAddWorker_Click(object sender, EventArgs e)
         {
-            Worker.Items.Add(new Worker
-            {
-                Name = tbWorkerName.Text,
-                SName = tbWorkerSName.Text,
-                PName = tbWorkerPName.Text,
-                Birthday = dtpWorkerBirthday.Value,
-                Gender = (Gender)cbWorkerGender.SelectedItem,
-                Salary = float.Parse(tbWorkerSalary.Text),
-                Staff = (Staff) lbStaffs.SelectedItem
-            }) ;
+            new FormWorker(null).ShowDialog();
             LBWorkersRefresh();
-            LBStaffsRefresh();
         }
 
         private void LBWorkersRefresh()
         {
             lbWorkers.DataSource = null;
-            if (lbStaffs.SelectedItem != null)
-            {
-                lbWorkers.DataSource = ((Staff)lbStaffs.SelectedItem).Workers;
-            }
+            lbWorkers.DataSource = Worker.Items;
         }
 
-        private void LBStaffsRefresh()
-        {
-            lbStaffs.DataSource = null;
-            lbStaffs.DataSource = Staff.Items;
-        }
 
         private void FormWorker_Load(object sender, EventArgs e)
         {
             LBWorkersRefresh();
-            LBStaffsRefresh();
-            cbWorkerGender.DataSource = Enum.GetValues(typeof(Gender));
-            cbWorkerGender.SelectedItem = Gender.NoData;
-            cbWorkerStaff.DataSource = Staff.Items;
-        }
 
-   
 
-   
-
-        private void btnAddStaff_Click(object sender, EventArgs e)
-        {
-            Staff.Items.Add(new Staff { Name = tbStaffName.Text, Description = tbStaffDescription.Text }) ;
-            LBStaffsRefresh();
-        }
-
-        private void btnStaffInfo_Click(object sender, EventArgs e)
-        {
-            new FormStaff((Staff)lbStaffs.SelectedItem).ShowDialog();
         }
 
         private void btnWorkerInfo_Click(object sender, EventArgs e)
         {
             new FormWorker((Worker)lbWorkers.SelectedItem).ShowDialog();
-        }
-
-        private void lbStaffs_SelectedIndexChanged(object sender, EventArgs e)
-        {
             LBWorkersRefresh();
         }
 
+        private void btnEditWorker_Click(object sender, EventArgs e)
+        {
+            new FormWorker((Worker)lbWorkers.SelectedItem).ShowDialog();
+            LBWorkersRefresh();
+        }
+
+        private void btnRemoveWorker_Click(object sender, EventArgs e)
+        {
+            Worker.Items.Remove((Worker)lbWorkers.SelectedItem);
+            LBWorkersRefresh();
+        }
     }
 }

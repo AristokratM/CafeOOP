@@ -34,6 +34,7 @@
             this.btnWorkersForm = new System.Windows.Forms.Button();
             this.btnMenusForm = new System.Windows.Forms.Button();
             this.btnDishesForm = new System.Windows.Forms.Button();
+            this.btnStaffsForm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnExit
@@ -64,7 +65,7 @@
             this.btnWorkersForm.BackColor = System.Drawing.Color.DarkSalmon;
             this.btnWorkersForm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnWorkersForm.BackgroundImage")));
             this.btnWorkersForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnWorkersForm.Location = new System.Drawing.Point(485, 34);
+            this.btnWorkersForm.Location = new System.Drawing.Point(703, 34);
             this.btnWorkersForm.Name = "btnWorkersForm";
             this.btnWorkersForm.Size = new System.Drawing.Size(200, 200);
             this.btnWorkersForm.TabIndex = 5;
@@ -95,13 +96,26 @@
             this.btnDishesForm.UseVisualStyleBackColor = false;
             this.btnDishesForm.Click += new System.EventHandler(this.btnDishesForm_Click);
             // 
+            // btnStaffsForm
+            // 
+            this.btnStaffsForm.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnStaffsForm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnStaffsForm.BackgroundImage")));
+            this.btnStaffsForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnStaffsForm.Location = new System.Drawing.Point(474, 34);
+            this.btnStaffsForm.Name = "btnStaffsForm";
+            this.btnStaffsForm.Size = new System.Drawing.Size(200, 200);
+            this.btnStaffsForm.TabIndex = 8;
+            this.btnStaffsForm.UseVisualStyleBackColor = false;
+            this.btnStaffsForm.Click += new System.EventHandler(this.btnStaffsForm_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(862, 481);
+            this.ClientSize = new System.Drawing.Size(934, 508);
+            this.Controls.Add(this.btnStaffsForm);
             this.Controls.Add(this.btnDishesForm);
             this.Controls.Add(this.btnMenusForm);
             this.Controls.Add(this.btnWorkersForm);
@@ -121,6 +135,7 @@
         private System.Windows.Forms.Button btnWorkersForm;
         private System.Windows.Forms.Button btnMenusForm;
         private System.Windows.Forms.Button btnDishesForm;
+        private System.Windows.Forms.Button btnStaffsForm;
     }
 }
 

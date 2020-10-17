@@ -94,6 +94,12 @@
     <Compile Include="FormStaff.Designer.cs">
       <DependentUpon>FormStaff.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormStaffs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStaffs.Designer.cs">
+      <DependentUpon>FormStaffs.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormWorker.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormStaff.resx">
       <DependentUpon>FormStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStaffs.ccp-Cakm-IN.resx">
+      <DependentUpon>FormStaffs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStaffs.resx">
+      <DependentUpon>FormStaffs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormWorker.resx">
       <DependentUpon>FormWorker.cs</DependentUpon>

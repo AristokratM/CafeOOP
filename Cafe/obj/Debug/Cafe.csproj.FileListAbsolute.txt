@@ -20,3 +20,7 @@ C:\Users\1\source\repos\Cafe\Cafe\obj\Debug\Cafe.FormMenu.resources
 C:\Users\1\source\repos\Cafe\Cafe\obj\Debug\Cafe.FormMenus.resources
 C:\Users\1\source\repos\Cafe\Cafe\obj\Debug\Cafe.FormDishes.resources
 C:\Users\1\source\repos\Cafe\Cafe\obj\Debug\Cafe.FormDish.resources
+C:\Users\1\source\repos\Cafe\Cafe\obj\Debug\Cafe.FormStaffs.resources
+C:\Users\1\source\repos\Cafe\Cafe\obj\Debug\Cafe.FormStaffs.ccp-Cakm-IN.resources
+C:\Users\1\source\repos\Cafe\Cafe\bin\Debug\ccp-Cakm-IN\Cafe.resources.dll
+C:\Users\1\source\repos\Cafe\Cafe\obj\Debug\ccp-Cakm-IN\Cafe.resources.dll

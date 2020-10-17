@@ -16,5 +16,15 @@ namespace Cafe
         {
             InitializeComponent();
         }
+
+        private void FormStaffs_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void LBStaffsRefresh()
+        {
+            lbStaffs.DataSource = null;
+            lbStaffs.DataSource = Data.Staff.Items;
+        }
     }
 }

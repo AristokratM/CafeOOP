@@ -87,5 +87,10 @@ namespace Cafe
         {
             new FormDishes().ShowDialog();
         }
+
+        private void btnStaffsForm_Click(object sender, EventArgs e)
+        {
+            new FormStaffs().ShowDialog();
+        }
     }
 }
