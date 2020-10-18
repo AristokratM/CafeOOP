@@ -45,21 +45,21 @@
             this.lblAllDishes.BackColor = System.Drawing.Color.Transparent;
             this.lblAllDishes.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblAllDishes.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblAllDishes.Location = new System.Drawing.Point(73, 44);
-            this.lblAllDishes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAllDishes.Location = new System.Drawing.Point(97, 54);
             this.lblAllDishes.Name = "lblAllDishes";
-            this.lblAllDishes.Size = new System.Drawing.Size(110, 18);
+            this.lblAllDishes.Size = new System.Drawing.Size(141, 24);
             this.lblAllDishes.TabIndex = 15;
             this.lblAllDishes.Text = "Dishes in Menu";
             // 
             // lbDishes
             // 
             this.lbDishes.FormattingEnabled = true;
-            this.lbDishes.Location = new System.Drawing.Point(40, 76);
-            this.lbDishes.Margin = new System.Windows.Forms.Padding(2);
+            this.lbDishes.ItemHeight = 16;
+            this.lbDishes.Location = new System.Drawing.Point(53, 94);
+            this.lbDishes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lbDishes.Name = "lbDishes";
             this.lbDishes.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.lbDishes.Size = new System.Drawing.Size(173, 290);
+            this.lbDishes.Size = new System.Drawing.Size(229, 356);
             this.lbDishes.TabIndex = 14;
             // 
             // lblOtherDishes
@@ -68,30 +68,30 @@
             this.lblOtherDishes.BackColor = System.Drawing.Color.Transparent;
             this.lblOtherDishes.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblOtherDishes.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblOtherDishes.Location = new System.Drawing.Point(459, 44);
-            this.lblOtherDishes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblOtherDishes.Location = new System.Drawing.Point(612, 54);
             this.lblOtherDishes.Name = "lblOtherDishes";
-            this.lblOtherDishes.Size = new System.Drawing.Size(95, 18);
+            this.lblOtherDishes.Size = new System.Drawing.Size(119, 24);
             this.lblOtherDishes.TabIndex = 17;
             this.lblOtherDishes.Text = "Other Dishes";
             // 
             // lbOtherDishes
             // 
             this.lbOtherDishes.FormattingEnabled = true;
-            this.lbOtherDishes.Location = new System.Drawing.Point(413, 76);
-            this.lbOtherDishes.Margin = new System.Windows.Forms.Padding(2);
+            this.lbOtherDishes.ItemHeight = 16;
+            this.lbOtherDishes.Location = new System.Drawing.Point(551, 94);
+            this.lbOtherDishes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lbOtherDishes.Name = "lbOtherDishes";
             this.lbOtherDishes.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.lbOtherDishes.Size = new System.Drawing.Size(176, 290);
+            this.lbOtherDishes.Size = new System.Drawing.Size(233, 356);
             this.lbOtherDishes.TabIndex = 16;
             // 
             // btnExit
             // 
             this.btnExit.BackColor = System.Drawing.Color.Moccasin;
-            this.btnExit.Location = new System.Drawing.Point(606, 408);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
+            this.btnExit.Location = new System.Drawing.Point(808, 502);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(86, 22);
+            this.btnExit.Size = new System.Drawing.Size(115, 27);
             this.btnExit.TabIndex = 18;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
@@ -99,41 +99,47 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(264, 153);
+            this.btnAdd.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnAdd.Location = new System.Drawing.Point(352, 188);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(96, 38);
+            this.btnAdd.Size = new System.Drawing.Size(128, 47);
             this.btnAdd.TabIndex = 19;
             this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnRemove
             // 
-            this.btnRemove.Location = new System.Drawing.Point(264, 216);
+            this.btnRemove.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnRemove.Location = new System.Drawing.Point(352, 266);
+            this.btnRemove.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(96, 38);
+            this.btnRemove.Size = new System.Drawing.Size(128, 47);
             this.btnRemove.TabIndex = 20;
             this.btnRemove.Text = "Remove";
-            this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.UseVisualStyleBackColor = false;
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(264, 277);
+            this.btnClear.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnClear.Location = new System.Drawing.Point(352, 341);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(96, 38);
+            this.btnClear.Size = new System.Drawing.Size(128, 47);
             this.btnClear.TabIndex = 21;
             this.btnClear.Text = "Clear";
-            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // FormDishInMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(745, 460);
+            this.ClientSize = new System.Drawing.Size(993, 566);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnAdd);
@@ -143,6 +149,7 @@
             this.Controls.Add(this.lblAllDishes);
             this.Controls.Add(this.lbDishes);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormDishInMenu";
             this.Text = "Edit Menu";
             this.Load += new System.EventHandler(this.FormDishInMenu_Load);

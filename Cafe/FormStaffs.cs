@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cafe.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,12 +20,41 @@ namespace Cafe
 
         private void FormStaffs_Load(object sender, EventArgs e)
         {
-
+            LBStaffsRefresh();
         }
         private void LBStaffsRefresh()
         {
             lbStaffs.DataSource = null;
             lbStaffs.DataSource = Data.Staff.Items;
+        }
+
+        private void btnStaffInfo_Click(object sender, EventArgs e)
+        {
+            new FormStaff((Staff)lbStaffs.SelectedItem).ShowDialog();
+            LBStaffsRefresh();
+        }
+
+        private void btnEditStaff_Click(object sender, EventArgs e)
+        {
+            new FormStaff((Staff)lbStaffs.SelectedItem).ShowDialog();
+            LBStaffsRefresh();
+        }
+
+        private void btnAddStaff_Click(object sender, EventArgs e)
+        {
+            new FormStaff(null).ShowDialog();
+            LBStaffsRefresh();
+        }
+
+        private void btnRemoveStaff_Click(object sender, EventArgs e)
+        {
+            Staff.Items.Remove((Staff)lbStaffs.SelectedItem);
+            LBStaffsRefresh();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

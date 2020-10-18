@@ -38,7 +38,7 @@ namespace Cafe
 
             cbWorkerGender.DataSource = Enum.GetValues(typeof(Gender));
             cbWorkerGender.SelectedItem = Gender.NoData;
-            cbWorkerStaff.DataSource = Staff.Items;
+
             if(_worker.Name != null)
             {
                 cbWorkerGender.SelectedItem = _worker.Gender;
@@ -50,7 +50,8 @@ namespace Cafe
 
         private void RTBWorkerInfoRefresh()
         {
-            if(_worker.Name == null)
+            cbWorkerStaff.DataSource = Staff.Items;
+            if (_worker.Name == null)
             {
                 rtbWorkerInfo.Text = "No Info";
                 return;

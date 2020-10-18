@@ -113,13 +113,14 @@
             // btnApplyChanges
             // 
             this.btnApplyChanges.BackColor = System.Drawing.Color.DarkSalmon;
-            this.btnApplyChanges.Location = new System.Drawing.Point(107, 326);
+            this.btnApplyChanges.Location = new System.Drawing.Point(89, 320);
             this.btnApplyChanges.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnApplyChanges.Name = "btnApplyChanges";
             this.btnApplyChanges.Size = new System.Drawing.Size(125, 36);
             this.btnApplyChanges.TabIndex = 51;
             this.btnApplyChanges.Text = "Apply Changes";
             this.btnApplyChanges.UseVisualStyleBackColor = false;
+            this.btnApplyChanges.Click += new System.EventHandler(this.btnApplyChanges_Click);
             // 
             // FormStaff
             // 

@@ -29,6 +29,7 @@ namespace Cafe.Data
             {
                 DishInMenu.Items.Add(new DishInMenu { Menu = this, Dish = dish });
             }
+
         }
         public void Remove_Dishes(List<Dish> dishes)
         {

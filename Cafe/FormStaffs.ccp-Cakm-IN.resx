@@ -117,16 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnStaffInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>469, 261</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnStaffInfo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnStaffInfo.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 36</value>
   </data>
   <data name="btnStaffInfo.Text" xml:space="preserve">
     <value>Staff Info</value>
+  </data>
+  <data name="btnAddStaff.Location" type="System.Drawing.Point, System.Drawing">
+    <value>403, 114</value>
   </data>
   <data name="btnAddStaff.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -144,6 +150,9 @@
   <data name="lblAllStaffs.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 11.25pt</value>
   </data>
+  <data name="lblAllStaffs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 37</value>
+  </data>
   <data name="lblAllStaffs.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 24</value>
   </data>
@@ -152,6 +161,9 @@
   </data>
   <data name="lbStaffs.ItemHeight" type="System.Int32, mscorlib">
     <value>16</value>
+  </data>
+  <data name="lbStaffs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 64</value>
   </data>
   <data name="lbStaffs.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
