@@ -38,18 +38,19 @@ namespace Cafe
 
             cbWorkerGender.DataSource = Enum.GetValues(typeof(Gender));
             cbWorkerGender.SelectedItem = Gender.NoData;
-
-            if(_worker.Name != null)
+            RTBWorkerInfoRefresh();
+            if (_worker.Name != null)
             {
                 cbWorkerGender.SelectedItem = _worker.Gender;
                 cbWorkerStaff.SelectedItem = _worker.Staff;
 
             }
-            RTBWorkerInfoRefresh();
+
         }
 
         private void RTBWorkerInfoRefresh()
         {
+            cbWorkerStaff.DataSource = null;
             cbWorkerStaff.DataSource = Staff.Items;
             if (_worker.Name == null)
             {

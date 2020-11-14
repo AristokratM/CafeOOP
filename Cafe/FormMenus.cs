@@ -65,5 +65,7 @@ namespace Cafe
             Data.Menu.Items.Remove((Data.Menu)lbMenus.SelectedItem);
             LBMenusRefresh();
         }
+
+ 
     }
 }

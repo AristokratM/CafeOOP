@@ -14,7 +14,6 @@ namespace Cafe.Data
 
         public float Weight { get; set; }
 
-        public String Ingredients { get; set; }
 
         public List<DishInMenu> DishInMenus
         {
