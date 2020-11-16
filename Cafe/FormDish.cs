@@ -74,9 +74,10 @@ namespace Cafe
             _dish.Weight = float.Parse(tbDishWeight.Text);
             if(!IsExist)
             {
-                Dish.Items.Add(_dish);
+              //  Dish.Items.Add(_dish);
                 IsExist = true;
             }
+            _dish.Save();
             RTBDishInfoRefresh();
         }
 

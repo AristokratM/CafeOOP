@@ -53,7 +53,10 @@ namespace Cafe
 
         private void btnRemoveDish_Click(object sender, EventArgs e)
         {
-            Dish.Items.Remove((Dish)lbDishes.SelectedItem);
+            //  Dish.Items.Remove((Dish)lbDishes.SelectedItem);
+            Dish selectedDish = ((Dish)lbDishes.SelectedItem);
+            selectedDish.Delete_All_Menues();
+            selectedDish.Delete();
             LBDishesRefresh();
         }
     }

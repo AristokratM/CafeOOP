@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -51,14 +52,15 @@ namespace Cafe
             Worker.Items.Add(worker1);
             Worker.Items.Add(worker2);
 
+            /*
             Data.Menu menu1 = new Data.Menu { Name = "Cheff Menu" };
             Data.Menu menu2 = new Data.Menu { Name = "Tourist Menu" };
             Data.Menu menu3 = new Data.Menu { Name = "Du Jour Menu" };
             Data.Menu menu4 = new Data.Menu { Name = "Main Menu" };
-            Data.Menu.Items.Add(menu1);
-            Data.Menu.Items.Add(menu2);
-            Data.Menu.Items.Add(menu3);
-            Data.Menu.Items.Add(menu4);
+            //Data.Menu.Items.Add(menu1);
+           // Data.Menu.Items.Add(menu2);
+           // Data.Menu.Items.Add(menu3);
+           // Data.Menu.Items.Add(menu4);
 
             Dish dish1 = new Dish { Name = "Greek salad", Price=155, Weight=330 };
             Dish dish2 = new Dish { Name = "Garden fresh salad", Price = 100, Weight = 350 };
@@ -72,7 +74,7 @@ namespace Cafe
             Dish.Items.Add(dish4);
             Dish.Items.Add(dish5);
             Dish.Items.Add(dish6);
-
+           
             DishInMenu.Items.Add(new DishInMenu { Menu = menu2, Dish = dish4});
             DishInMenu.Items.Add(new DishInMenu { Menu = menu4, Dish = dish4 });
             DishInMenu.Items.Add(new DishInMenu { Menu = menu4, Dish = dish1 });
@@ -81,6 +83,8 @@ namespace Cafe
             DishInMenu.Items.Add(new DishInMenu { Menu = menu3, Dish = dish5 });
             DishInMenu.Items.Add(new DishInMenu { Menu = menu2, Dish = dish6 });
             DishInMenu.Items.Add(new DishInMenu { Menu = menu4, Dish = dish6 });
+            */
+
         }
 
         private void btnDishesForm_Click(object sender, EventArgs e)

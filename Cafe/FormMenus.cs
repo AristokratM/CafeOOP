@@ -33,6 +33,8 @@ namespace Cafe
         {
             lbMenus.DataSource = null;
             lbMenus.DataSource = Data.Menu.Items;
+            Console.WriteLine(Data.Menu.Items.Length);
+            
         }
 
 
@@ -62,7 +64,10 @@ namespace Cafe
 
         private void btnRemoveMenu_Click(object sender, EventArgs e)
         {
-            Data.Menu.Items.Remove((Data.Menu)lbMenus.SelectedItem);
+            //Data.Menu.Items.Remove((Data.Menu)lbMenus.SelectedItem);
+            Data.Menu selectedMenu = ((Data.Menu)lbMenus.SelectedItem);
+            selectedMenu.Delete_All_Dishes();
+            selectedMenu.Delete();
             LBMenusRefresh();
         }
 

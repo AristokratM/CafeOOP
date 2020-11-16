@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 namespace Cafe.Data
 {
     [DataContract]
-    public class Base<T> where T : class
+    public class Base<T> where T : Base<T>
     {
         static internal TableManager tm; // об`єкт, за допомогою якого ми зможемо працювати з таблицею у базі 
-        //даних для певного класу 
+                                         //даних для певного класу 
 
         static Base()
         {
@@ -136,6 +136,17 @@ namespace Cafe.Data
         {
             _row.Delete();
             tm.Update(_row);
+        }
+        public override bool Equals(object obj)
+        {
+            if ((obj == null) || !this.GetType().Equals(obj.GetType()))
+            {
+                return false;
+            }
+            else
+            {   
+                return this.Id == ((T)Convert.ChangeType(obj, typeof(T))).Id;
+            }
         }
     }
 }

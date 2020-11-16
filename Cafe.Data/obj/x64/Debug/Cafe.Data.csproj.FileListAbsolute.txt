@@ -1,0 +1,6 @@
+C:\Users\1\source\repos\Cafe\Cafe.Data\bin\x64\Debug\Cafe.Data.dll
+C:\Users\1\source\repos\Cafe\Cafe.Data\bin\x64\Debug\Cafe.Data.pdb
+C:\Users\1\source\repos\Cafe\Cafe.Data\obj\x64\Debug\Cafe.Data.csproj.CoreCompileInputs.cache
+C:\Users\1\source\repos\Cafe\Cafe.Data\obj\x64\Debug\Cafe.Data.dll
+C:\Users\1\source\repos\Cafe\Cafe.Data\obj\x64\Debug\Cafe.Data.pdb
+C:\Users\1\source\repos\Cafe\Cafe.Data\obj\x64\Debug\Cafe.Data.csprojAssemblyReference.cache

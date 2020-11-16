@@ -68,9 +68,11 @@ namespace Cafe
             _menu.Name = tbMenuName.Text;
             if(!IsExist)
             {
-                Data.Menu.Items.Add(_menu);
+                //Data.Menu.Items.Add(_menu);
+                
                 IsExist = true;
             }
+            _menu.Save();
             RTBMenuInfoRefresh();
         }
     }
