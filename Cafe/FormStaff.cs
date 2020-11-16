@@ -67,9 +67,10 @@ namespace Cafe
             _staff.Description = tbStaffDescription.Text;
             if(!IsExist)
             {
-                Staff.Items.Add(_staff);
+                //Staff.Items.Add(_staff);
                 IsExist = true;
             }
+            _staff.Save();
             RTBStaffInfoRefresh();
         }
     }

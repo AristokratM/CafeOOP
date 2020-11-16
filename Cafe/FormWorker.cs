@@ -83,9 +83,10 @@ namespace Cafe
 
             if(!IsExist)
             {
-                Worker.Items.Add(_worker);
+               // Worker.Items.Add(_worker);
                 IsExist = true;
             }
+            _worker.Save();
             RTBWorkerInfoRefresh();
         }
     }

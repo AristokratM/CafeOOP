@@ -48,7 +48,8 @@ namespace Cafe
 
         private void btnRemoveStaff_Click(object sender, EventArgs e)
         {
-            Staff.Items.Remove((Staff)lbStaffs.SelectedItem);
+            //   Staff.Items.Remove((Staff)lbStaffs.SelectedItem);
+            ((Staff)lbStaffs.SelectedItem).Delete();
             LBStaffsRefresh();
         }
 

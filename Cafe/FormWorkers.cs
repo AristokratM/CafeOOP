@@ -57,7 +57,8 @@ namespace Cafe
 
         private void btnRemoveWorker_Click(object sender, EventArgs e)
         {
-            Worker.Items.Remove((Worker)lbWorkers.SelectedItem);
+            //Worker.Items.Remove((Worker)lbWorkers.SelectedItem);
+            ((Worker)lbWorkers.SelectedItem).Delete();
             LBWorkersRefresh();
         }
     }
