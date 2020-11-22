@@ -2,24 +2,28 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Cafe.Data
 {
+    [DataContract]
     public class Dish:Base<Dish>
     {
         //static public List<Dish> Dishes = new List<Dish>();
+        [DataMember]
         public string Name
         {
             get { if (_row["NAME"] != DBNull.Value) { return Convert.ToString(_row["NAME"]); } else return ""; }
             set { _row["NAME"] = value; }
         }
+        [DataMember]
         public double Price {
             get { if (_row["PRICE"] != DBNull.Value) { return Convert.ToDouble(_row["PRICE"]); } else return 0d; }
             set { _row["PRICE"] = Math.Round(value,2); }
         }
-
+        [DataMember]
         public double Weight {
             get { if (_row["WEIGHT"] != DBNull.Value) { return Convert.ToDouble(_row["WEIGHT"]); } else return 0d; }
             set { _row["WEIGHT"] = Math.Round(value, 2); }

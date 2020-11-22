@@ -97,5 +97,11 @@ namespace Cafe
         {
             new FormStaffs().ShowDialog();
         }
+
+        private void FormMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            XMLSerializer.Write("CafeData.xml");
+            JSONSerializer.Write("CafeData.json");
+        }
     }
 }

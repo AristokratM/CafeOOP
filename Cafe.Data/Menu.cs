@@ -2,14 +2,17 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Cafe.Data
 {
+    [DataContract]
     public class Menu : Base<Menu>
     {
         //  static public List<Menu> Menus = new List<Menu>();
+        [DataMember]
         public string Name
         {
             get { if (_row["NAME"] != DBNull.Value) { return Convert.ToString(_row["NAME"]); } else return ""; }
@@ -23,9 +26,11 @@ namespace Cafe.Data
         {
 
         }
+        [DataMember]
         public int NumberOfDishes
         {
             get { return Dishes.Count(); }
+            set { }
         }
         public List<DishInMenu> DishInMenus
         {
