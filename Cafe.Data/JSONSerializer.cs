@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Cafe.Data
@@ -66,7 +67,8 @@ namespace Cafe.Data
                 MaxDepth = 0,
                 IgnoreNullValues = true,
                 IgnoreReadOnlyProperties = true,
-                WriteIndented = true
+                WriteIndented = true,
+
             };
             var jsonString = JsonSerializer.Serialize(Instance, options);
             File.WriteAllText(filename, jsonString);

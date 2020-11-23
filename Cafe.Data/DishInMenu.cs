@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Cafe.Data
@@ -33,6 +34,7 @@ namespace Cafe.Data
         {
 
         }
+        [JsonIgnore]
         public Dish Dish
 
         {
@@ -58,7 +60,7 @@ namespace Cafe.Data
             }
             set { }
         }
-
+        [JsonIgnore]
         public Menu Menu
         {
             get

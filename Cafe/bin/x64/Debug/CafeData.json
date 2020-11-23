@@ -1,0 +1,118 @@
+{
+  "Staffs": [
+    {
+      "Name": "Kitchen",
+      "Description": "Some Info"
+    },
+    {
+      "Name": "Service",
+      "Description": "Service Staff"
+    }
+  ],
+  "Workers": [
+    {
+      "Name": "Oleh",
+      "SName": "Tonkoshkur",
+      "PName": "Ryslanovych",
+      "Age": 18,
+      "Birthday": "2002-05-13T23:19:17",
+      "Gender": 0,
+      "Salary": 100005
+    },
+    {
+      "Name": "Ivan",
+      "SName": "Ivanovych",
+      "PName": "Ivanov",
+      "Age": 26,
+      "Birthday": "1994-05-11T23:22:37",
+      "Gender": 0,
+      "Salary": 434
+    },
+    {
+      "Name": "Atem",
+      "SName": "Artemenko",
+      "PName": "Petrovych",
+      "Age": 27,
+      "Birthday": "1993-06-15T00:56:22",
+      "Gender": 0,
+      "Salary": 323
+    }
+  ],
+  "Menues": [
+    {
+      "Name": "Menu 5",
+      "NumberOfDishes": 5
+    },
+    {
+      "Name": "Cheff Menu",
+      "NumberOfDishes": 3
+    },
+    {
+      "Name": "Tourist Menu",
+      "NumberOfDishes": 3
+    },
+    {
+      "Name": "Du Jour Menu",
+      "NumberOfDishes": 2
+    },
+    {
+      "Name": "Main Menu",
+      "NumberOfDishes": 3
+    }
+  ],
+  "Dishes": [
+    {
+      "Name": "Greek Salad",
+      "Price": 135,
+      "Weight": 32
+    },
+    {
+      "Name": "Garden fresh salad",
+      "Price": 321,
+      "Weight": 43
+    },
+    {
+      "Name": "Bacon and eggs",
+      "Price": 32,
+      "Weight": 4
+    },
+    {
+      "Name": "New-York steak",
+      "Price": 213,
+      "Weight": 32
+    },
+    {
+      "Name": "Omelette",
+      "Price": 100,
+      "Weight": 40
+    },
+    {
+      "Name": "Shish kebab",
+      "Price": 330,
+      "Weight": 400
+    },
+    {
+      "Name": "Potato",
+      "Price": 12,
+      "Weight": 144
+    }
+  ],
+  "DishInMenus": [
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+  ]
+}

@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Cafe.Data
@@ -37,7 +38,7 @@ namespace Cafe.Data
         {
 
         }
-
+        [JsonIgnore]
         public List<DishInMenu> DishInMenus
         {
             get
@@ -45,6 +46,7 @@ namespace Cafe.Data
                 return DishInMenu.Items.Where(dm => dm.Dish.Id == this.Id).ToList();
             }
         }
+        [JsonIgnore]
         public List<Menu> Menus
         {
             get {

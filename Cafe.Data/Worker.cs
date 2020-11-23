@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Cafe.Data
@@ -35,6 +36,7 @@ namespace Cafe.Data
         {
 
         }
+        [JsonIgnore]
         public Staff Staff
         {
             get {//if (_row["IDSTAFF"] != DBNull.Value) { 
