@@ -37,6 +37,7 @@
             this.btnMenuInfo = new System.Windows.Forms.Button();
             this.btnEditMenu = new System.Windows.Forms.Button();
             this.btnRemoveMenu = new System.Windows.Forms.Button();
+            this.btnFindMenu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnExit
@@ -133,6 +134,18 @@
             this.btnRemoveMenu.UseVisualStyleBackColor = false;
             this.btnRemoveMenu.Click += new System.EventHandler(this.btnRemoveMenu_Click);
             // 
+            // btnFindMenu
+            // 
+            this.btnFindMenu.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnFindMenu.Location = new System.Drawing.Point(297, 313);
+            this.btnFindMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnFindMenu.Name = "btnFindMenu";
+            this.btnFindMenu.Size = new System.Drawing.Size(124, 32);
+            this.btnFindMenu.TabIndex = 27;
+            this.btnFindMenu.Text = "Find Menu";
+            this.btnFindMenu.UseVisualStyleBackColor = false;
+            this.btnFindMenu.Click += new System.EventHandler(this.btnFindMenu_Click);
+            // 
             // FormMenus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -140,6 +153,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(713, 478);
+            this.Controls.Add(this.btnFindMenu);
             this.Controls.Add(this.btnRemoveMenu);
             this.Controls.Add(this.btnEditMenu);
             this.Controls.Add(this.btnMenuInfo);
@@ -168,5 +182,6 @@
         private System.Windows.Forms.Button btnMenuInfo;
         private System.Windows.Forms.Button btnEditMenu;
         private System.Windows.Forms.Button btnRemoveMenu;
+        private System.Windows.Forms.Button btnFindMenu;
     }
 }

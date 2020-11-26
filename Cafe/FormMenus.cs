@@ -33,7 +33,6 @@ namespace Cafe
         {
             lbMenus.DataSource = null;
             lbMenus.DataSource = Data.Menu.Items;
-            Console.WriteLine(Data.Menu.Items.Length);
             
         }
 
@@ -71,6 +70,9 @@ namespace Cafe
             LBMenusRefresh();
         }
 
- 
+        private void btnFindMenu_Click(object sender, EventArgs e)
+        {
+            new FormFindMenuByDish().ShowDialog();
+        }
     }
 }

@@ -43,3 +43,4 @@ C:\Users\1\source\repos\Cafe\Cafe\bin\x64\Debug\System.Text.Encodings.Web.xml
 C:\Users\1\source\repos\Cafe\Cafe\bin\x64\Debug\System.Text.Json.xml
 C:\Users\1\source\repos\Cafe\Cafe\bin\x64\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\1\source\repos\Cafe\Cafe\bin\x64\Debug\System.ValueTuple.xml
+C:\Users\1\source\repos\Cafe\Cafe\obj\x64\Debug\Cafe.FormFindMenuByDish.resources

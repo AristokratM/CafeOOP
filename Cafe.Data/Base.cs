@@ -109,13 +109,14 @@ namespace Cafe.Data
             _row = dr;
             _isNew = false;
         }
-
+        [DataMember]
         public Guid Id //отримання ID об`єкта
         {
             get
             {
                 return new Guid(_row["ID"].ToString());
             }
+            set { }
         }
 
         public bool IsNew

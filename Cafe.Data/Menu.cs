@@ -71,6 +71,31 @@ namespace Cafe.Data
             }
         }
 
+        public static List<Menu> Get_Menues_With_Minimum_Number_Of_Selected_Dishes(List<Dish> selected_dishes, int n)
+        {
+            List<Menu> finded = new List<Menu>();
+            foreach (var menu in Menu.Items)
+            {
+                int count = 0;
+                foreach (var dish in selected_dishes)
+                {
+                    if (menu.Dishes.Contains(dish))
+                    {
+                        count += 1;
+                        if (count >= n)
+                        {
+                            finded.Add(menu);
+                            break;
+                        }
+                    }
+                }
+
+
+            }
+
+            return finded;
+        }
+
         public bool Validate_Name()
         {
              return !this.Name.Equals("") && this.Name.Length < 50;

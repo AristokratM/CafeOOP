@@ -2,11 +2,13 @@
   "Staffs": [
     {
       "Name": "Kitchen",
-      "Description": "Some Info"
+      "Description": "Some Info",
+      "Id": "629dab3e-1866-4c90-9c60-c051b50617de"
     },
     {
       "Name": "Service",
-      "Description": "Service Staff"
+      "Description": "Service Staff",
+      "Id": "707c8c56-7afa-4ac7-bed9-9347ce8aa28a"
     }
   ],
   "Workers": [
@@ -17,7 +19,8 @@
       "Age": 18,
       "Birthday": "2002-05-13T23:19:17",
       "Gender": 0,
-      "Salary": 100005
+      "Salary": 100005,
+      "Id": "581f6fcd-5b4d-4602-8a83-23debd01bb88"
     },
     {
       "Name": "Ivan",
@@ -26,7 +29,8 @@
       "Age": 26,
       "Birthday": "1994-05-11T23:22:37",
       "Gender": 0,
-      "Salary": 434
+      "Salary": 434,
+      "Id": "e3ad0f7f-4c67-4f9e-ae8b-4b45d9cc2403"
     },
     {
       "Name": "Atem",
@@ -35,84 +39,146 @@
       "Age": 27,
       "Birthday": "1993-06-15T00:56:22",
       "Gender": 0,
-      "Salary": 323
+      "Salary": 323,
+      "Id": "ba977f1d-6bf4-4d57-9988-8fa1d9cf36e6"
     }
   ],
   "Menues": [
     {
       "Name": "Menu 5",
-      "NumberOfDishes": 5
+      "NumberOfDishes": 5,
+      "Id": "f59ea5ba-4eb1-416b-8a81-38bcc9759350"
     },
     {
       "Name": "Cheff Menu",
-      "NumberOfDishes": 3
+      "NumberOfDishes": 3,
+      "Id": "4c998836-4c62-47d7-a3ef-504fe8cd40d8"
     },
     {
       "Name": "Tourist Menu",
-      "NumberOfDishes": 3
+      "NumberOfDishes": 3,
+      "Id": "66b929df-68c6-4d81-92aa-e6187b6bf8f5"
     },
     {
       "Name": "Du Jour Menu",
-      "NumberOfDishes": 2
+      "NumberOfDishes": 2,
+      "Id": "ee276b5b-2b93-4243-b202-16367cface96"
     },
     {
       "Name": "Main Menu",
-      "NumberOfDishes": 3
+      "NumberOfDishes": 3,
+      "Id": "acf059af-bc22-4eb2-ade1-f7a94d0dd49e"
+    },
+    {
+      "Name": "Menu8",
+      "NumberOfDishes": 4,
+      "Id": "c6bd3835-4642-4b2d-9267-65b5ea5232fb"
     }
   ],
   "Dishes": [
     {
       "Name": "Greek Salad",
       "Price": 135,
-      "Weight": 32
+      "Weight": 32,
+      "Id": "84dfcc00-be33-47a3-bb67-097427b346da"
     },
     {
       "Name": "Garden fresh salad",
       "Price": 321,
-      "Weight": 43
+      "Weight": 43,
+      "Id": "8a9720d6-070b-4275-a859-b622c66c3ec9"
     },
     {
       "Name": "Bacon and eggs",
       "Price": 32,
-      "Weight": 4
+      "Weight": 4,
+      "Id": "b00d6631-dfce-44a3-83f8-e0e0e4c04c94"
     },
     {
       "Name": "New-York steak",
       "Price": 213,
-      "Weight": 32
+      "Weight": 32,
+      "Id": "cae2850e-52cd-4756-8cc6-e08a7a304510"
     },
     {
       "Name": "Omelette",
       "Price": 100,
-      "Weight": 40
+      "Weight": 40,
+      "Id": "4e92c15c-c188-4959-ab8c-b53680799398"
     },
     {
       "Name": "Shish kebab",
       "Price": 330,
-      "Weight": 400
+      "Weight": 400,
+      "Id": "1c7d3d28-58f2-4082-ba04-d1f2862f004d"
     },
     {
       "Name": "Potato",
       "Price": 12,
-      "Weight": 144
+      "Weight": 144,
+      "Id": "89d527d4-4e2c-47f0-8938-c1b5c34b20ff"
     }
   ],
   "DishInMenus": [
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {}
+    {
+      "Id": "e4529969-55b3-4a1c-b16b-6c4c06ca1d97"
+    },
+    {
+      "Id": "be4277f1-13e2-4139-9359-34a7c6450561"
+    },
+    {
+      "Id": "cf5d51c4-5606-4695-a7fc-cac96ab71bbe"
+    },
+    {
+      "Id": "f1823a62-c6e3-439a-9435-53962132f7db"
+    },
+    {
+      "Id": "743eb184-e8aa-4252-972d-febac0b6545f"
+    },
+    {
+      "Id": "783f9c8e-c370-4a0c-be78-799181c901d6"
+    },
+    {
+      "Id": "f5444066-9c77-4097-8929-ee88c7be034d"
+    },
+    {
+      "Id": "2dd6ba88-4a96-4abd-ac29-20df797b3f08"
+    },
+    {
+      "Id": "a444b522-f3de-45da-8c39-7b73286a0e24"
+    },
+    {
+      "Id": "d8c2fca3-6e76-48f7-b113-f15dcd46a8a7"
+    },
+    {
+      "Id": "e3b4c342-6319-4e66-9208-90f25a44f264"
+    },
+    {
+      "Id": "268754d0-88a6-4135-9c4d-756bb1c9f5fe"
+    },
+    {
+      "Id": "7e75f510-8477-465e-af75-d36ace00d9b7"
+    },
+    {
+      "Id": "c42a8bd8-a54b-4a9b-ae35-f132c064ac61"
+    },
+    {
+      "Id": "34c6444c-6e0b-456c-893e-0a66be3b5df6"
+    },
+    {
+      "Id": "e6ee2358-cda0-4644-b573-6144e4f8b5e0"
+    },
+    {
+      "Id": "a525bbbf-b4a7-4e8f-ab54-26a1a10357e6"
+    },
+    {
+      "Id": "ec03ff2d-1e2d-4e1a-afcb-a06e07e30e3a"
+    },
+    {
+      "Id": "0b496795-709a-42d8-8085-a416baf23aa3"
+    },
+    {
+      "Id": "aac8f147-5d3f-47fe-837d-a19c050300b6"
+    }
   ]
 }
